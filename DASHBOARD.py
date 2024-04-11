@@ -90,8 +90,7 @@ fig_receita_mensal = px.line(receita_mensal,
                          range_y= (0, receita_mensal.max()),
                          color= 'Ano',
                          line_dash= 'Ano',
-                         title= 'Receita Mensal',
-                         color_discrete_map={'2020': '#800080', '2021': '#4B0082', '2022': '#800080'}
+                         title= 'Receita Mensal'
 )
 fig_receita_mensal.update_layout(yaxis_title= 'Receita')
 
@@ -128,8 +127,8 @@ fig_vendas_mes = px.line(vendas_mes,
                          color= 'Ano',
                          range_y= (0, vendas_mes.max()),
                          line_dash= 'Ano',
-                         title= 'Vendas Mensal',
-                         color_discrete_map={'2020': '#4B0082', '2021': '#000080', '2022': '#6A5ACD'})
+                         title= 'Vendas Mensal'
+                        )
 fig_vendas_mes.update_layout(yaxis_title= 'Quantidade de Vendas')
 
 fig_top_vendas = px.bar(vendas_map.head(),
